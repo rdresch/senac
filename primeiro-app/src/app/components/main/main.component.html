@@ -1,0 +1,10 @@
+<!-- Exemplo de String Interpolation -->
+<textarea>{{texto2}}</textarea>
+<!-- Exemplo de Property Data Binding -->
+<img [src]="imageLoad">
+<!-- Exemplo de Event Binding -->
+<button (click)="mostrarLoader()">Loader</button>
+<!-- Exemplo de um two way Data Binding (Event + Interpolation)-->
+<textarea (input)="copiarTexto($event)">{{texto}}</textarea>
+<!--Mais um exemplo de Event Binding -->
+<button (click)="colarTexto()">Copiar</button>
