@@ -1,0 +1,7 @@
+<div style="width: 100%">
+ <p>{{TextoNoMain}}</p> 
+<!--Colocar primeiro valor direto, depois variável interna -->  
+<app-esquerdo [Numero]=Interno></app-esquerdo>
+<!-- (nome do emitter do filho) = 'nome da propriedade receptora no pai' PROPERTY BINDING, OUTPUT 3-->  
+<app-direito (definirTextoNoMain)="textoNoMain($event)"></app-direito>
+</div>
