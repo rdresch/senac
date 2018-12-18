@@ -1,14 +1,51 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" },
-    "produtos": [{
-
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Revólver 38",
+      "descricao": "Revólver de calibre permitido, ideal para defesa pessoal",
+      "valor": "4589,99"
     },
-    {}
-    ]
-  }
+    {
+      "id": 2,
+      "nome": "Glock G25",
+      "descricao": "Pistola automática de calibre permitido, ideal para defesa pessoal",
+      "valor": "2999,99"
+    },
+    {
+      "id": 3,
+      "nome": "Espingarda",
+      "descricao": "Espingarda de calibre 12 permitido, ideal para defesa do patrimônio rural",
+      "valor": "3499,99"
+    },
+    {
+      "id": 4,
+      "nome": "AR 15",
+      "descricao": "Fuzil de calibre restrito ao uso militar",
+      "valor": "8799,99"
+    },
+    {
+      "id": 5,
+      "nome": "AR 15",
+      "descricao": "Fuzil de calibre restrito ao uso militar",
+      "valor": "8799,99"
+    }
+  ]
+}

@@ -18,7 +18,20 @@ export class ProdutosComponent implements OnInit {
   constructor(private produtosService: ProdutosService) { }
 
   ngOnInit() {
-    this.produtos = this.produtosService.getProdutos()
+    //this.produtos = this.produtosService.getProdutos()
+
+    //O promise retornará 2 parâmetros para nós, um em caso positivo que conhecemos
+    //A promise que entregara um conjunto de Produtos, logo devemos esperar o que a
+    //promise nos prometeu que entregaria: um conjunto de produtos
+    this.produtosService.getProdutosPromiseAPI()
+    .then(
+      ( prod: Produto[]) =>{
+      this.produtos = prod
+    },
+    //e o outro parâmetro é do tipo reject, que eu desconheço.
+    //Como não sei o que virá do segundo retorno(reject)
+    //Defini como uma variável chamada erro de qualquer tipo
+    (erro: any) => {console.log(erro)})
   }
 
 }

@@ -16,6 +16,7 @@ import { RotaDinamica } from './app.route';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot(RotaDinamica)    
   ],
   providers: [],

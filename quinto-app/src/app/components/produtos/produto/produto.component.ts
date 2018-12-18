@@ -22,8 +22,11 @@ export class ProdutoComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(this.produtosService.getProdutoPorId(this.route.snapshot.params['id']))
-    this.produto = this.produtosService.getProdutoPorId(this.route.snapshot.params['id'])
+    this.produtosService.getProdutoPorIdAPI(this.route.snapshot.params['id'])
+    .then((prod: Produto)=>{
+      console.log(prod)
+      this.produto = prod[0]
+    })
   }
 
 }
